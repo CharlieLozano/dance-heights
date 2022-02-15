@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <title>Dance Heights</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <nav>
+        <h1>Dance Heights</h1>
+        
+        <div class="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id='submenu'>
+            <li><a href="#about-us"><h4>About Us</h4></a></li>
+            <li><a href="#location"><h4>Location</h4></a></li>
+            <li><a href="#schedules"><h4>Schedules</h4></a></li>
+            <li><a href="#photos"><h4>Photos</h4></a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <h1>Dance Heights</h1>
+        <h2>Onwards and Upwards</h2>
+    </header>
+   
+    <section id="about-us">
+        <div class="about-us-card">
+         <h2>About Us</h2>
+        <p>We are a group of Aerial Dance practitioners focused on creating a welcoming enviroment for anybody who is interested in starting or continuing in this beautiful craft.</p>
+        <p>Phone Number: 444-444-4444<br>
+        Email: contact@danceheights.com</p>           
+            
+        </div>
+        <img src="resources/images/about-us.jpg" alt="">
+    </section>
+      
+    <section id="location">
+        <h2>Location</h2>
+        <p>444 La Hacienda Av. Las Arboledas - Paris, France.</p>
+    </section>
+    
+    <section id="schedules">
+            <div class="day">
+                <div class="day-cell">
+                    <h3>Monday</h3>
+                </div>
+                <div class="time-cell">
+                    <p>11:00 AM</p>
+                </div>
+            </div>
+            
+            <div class="day">
+                <div class="day-cell">
+                    <h3>Wednesday</h3>
+                </div>
+                <div class="time-cell">
+                    <p>11:00 AM</p>
+                </div>
+            </div>
+            
+            <div class="day">
+                <div class="day-cell">
+                    <h3>Friday</h3>
+                </div>
+                <div class="time-cell">
+                    <p>11:00 AM</p>
+                </div>
+            </div>
+            
+            <div class="day">
+                <div class="day-cell">
+                    <h3>Saturday</h3>
+                </div>
+                <div class="time-cell">
+                    <p>12:00 PM</p>
+                </div>
+            </div>
+        
+    </section>
+    
+    <section id="photos">
+        <img src="resources/images/photo1.jpg" alt="">
+        <img src="resources/images/photo2.jpg" alt="">
+        <img src="resources/images/photo3.jpg" alt="">
+        <img src="resources/images/photo4.jpg" alt="">
+        <img src="resources/images/photo5.jpg" alt="">
+        
+    </section>
+    
+    <footer>
+        <h4>This is a fake website used for educational purposes only.</h4>
+    </footer>
+    
+    <script>    
+        const menu = document.querySelector('.menu');
+        const submenu = document.querySelector('#submenu');
+        
+        menu.onclick = function(){
+            if(submenu.style.display == 'none'){submenu.style.display = 'flex'} 
+            else{submenu.style.display = 'none'}
+
+        }
+        
+        window.addEventListener("resize", function() {
+          if (window.matchMedia("(min-width: 600px)").matches) {
+            submenu.style.display = 'flex';
+          }else{
+            submenu.style.display = 'none';
+          }
+        })
+        
+    </script>
+    
+</body>
+</html>
